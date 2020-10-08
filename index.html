@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <title>Singers Are Here | Home Page</title>
+  <style>
+    #banner::before {
+      background-color: #000000;
+      opacity: 0.3;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="javascript:void(0);">
+      <img src="assets/images/icon.jpg" class="rounded" width="30" height="30" alt="SingerHub" loading="lazy">
+    </a>
+    <a class="navbar-brand" href="index.html">ONE Direction</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item fw">
+          <a class="nav-link" href="javascript:void(0);">Karoke Songs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Perform
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="javascript:void(0);">Solo</a>
+            <a class="dropdown-item" href="javascript:void(0);">Duet</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="javascript:void(0);">Support Us</a>
+          </div>
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+
+      <div class="mx-2">
+        <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+        <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- LOGIN MODAL START-->
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login to 1D</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="InputEmail">Email</label>
+              <input type="email" class="form-control" id="InputEmail" placeholder="Enter email"
+                aria-describedby="emailHelp" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="InputPassword">Password</label>
+              <input type="password" class="form-control" id="InputPassword" aria-describedby="passwordHelp" required>
+              <small id="passwordHelp" class="form-text text-muted">Password should contain upper lower number
+                characters.</small>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="checkText">
+              <label for="checkText" class="form-check-label">Check me to agree our terms</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- LOGIN MODAL END -->
+
+  <!--sign up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Sign Up to 1D</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="InputUser">Username</label>
+              <input type="text" class="form-control" id="InputUser" placeholder="Enter username"
+                aria-describedby="userHelp" required>
+              <small id="userHelp" class="form-text text-muted">only character and numbers are allow</small>
+            </div>
+            <div class="form-group">
+              <label for="InputEmail">Email</label>
+              <input type="email" class="form-control" id="InputEmail" placeholder="Enter email"
+                aria-describedby="emailHelp" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <!-- <div class="form-group">
+            <label for="InputPhone">Phone</label>
+            <input type="tel" class="form-control" id="InputPhone" aria-describedby="phoneHelp" required>
+            <small id="phoneHelp" class="form-text text-muted">We'll never share your phone with anyone else.</small>
+          </div> -->
+            <div class="form-group">
+              <label for="InputPassword">Password</label>
+              <input type="password" class="form-control" id="InputPassword" aria-describedby="passwordHelp" required>
+              <small id="passwordHelp" class="form-text text-muted">Password should contain upper lower number
+                characters.</small>
+            </div>
+            <div class="form-group">
+              <label for="InputPasswordCon">Confirm Password</label>
+              <input type="password" class="form-control" id="InputPasswordCon" aria-describedby="passwordHelpCon"
+                required>
+              <small id="passwordHelpCon" class="form-text text-muted">Re enter same password</small>
+            </div>
+
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="checkText">
+              <label for="checkText" class="form-check-label">Check me to agree our terms</label>
+            </div>
+            <button type="submit" class="btn btn-primary">SignUp</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CAROUSEL START -->
+  <div id="carouselBanner" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselBanner" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselBanner" data-slide-to="1"></li>
+      <li data-target="#carouselBanner" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img id="banner" src="assets/images/Banners/singbanner1.png" class="d-block w-100" alt="Singing Banner 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Sing With us</h2>
+          <p>We provides huge collection of 1D karoke</p>
+          <button class="btn btn-danger">Hip Hop</button>
+          <button class="btn btn-primary">Jazz</button>
+          <button class="btn btn-success">Rock</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img id="banner" src="assets/images/Banners/singbanner2.png" class="d-block w-100" alt="Singing Banner 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Get More Free Musics</h2>
+          <p>One Direction best album karoke for you totally free</p>
+          <button class="btn btn-danger">Blues</button>
+          <button class="btn btn-primary">Folk</button>
+          <button class="btn btn-success">Pop</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img id="banner" src="assets/images/Banners/singbanner3.png" class="d-block w-100" alt="Singing Banner 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Get Our Merchandise</h2>
+          <p>Win The 1D contest and get top 20 Free band instruments</p>
+          <button class="btn btn-danger">Rap</button>
+          <button class="btn btn-primary">Heavy Metal</button>
+          <button class="btn btn-success">Soul</button>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselBanner" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselBanner" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- CAROUSEL END -->
+
+  <!-- CAROUSEL CARD START -->
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/images/team/niall.jpg"
+          alt="Nial Horan">
+        <h2>Niall Horan</h2>
+        <p>Niall James Horan is an Irish singer and songwriter. He rose to prominence as a member of the boy band One
+          Direction, formed in 2010 on the British singing competition <span class="badge badge-pill badg"></span> The X
+          Factor.</p>
+        <p class="mt-5"><a class="btn btn-primary" href="#" role="button">View details »</a></p>
+      </div>
+      <div class="col-lg-3">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/images/team/liam.jpg"
+          alt="Liam Payne">
+        <h2>Liam Payne</h2>
+        <p>Liam James Payne is an English singer and songwriter. He rose to fame as a member of the boy band One
+          Direction. Payne made his debut as a singer in 2008 when he auditioned for the British television series The X
+          Factor.</p>
+        <p class="mt-4"><a class="btn btn-primary" href="#" role="button">View details »</a></p>
+      </div>
+      <div class="col-lg-3">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/images/team/harry.jpg"
+          alt="Harry Styles">
+        <h2>Harry Styles</h2>
+        <p>Harry Edward Styles (born 1 February 1994) is an English singer, songwriter and actor. His musical career
+          began in 2010 as a solo contestant on the British music competition series The X Factor.</p>
+        <p class="mt-5"><a class="btn btn-primary" href="#" role="button">View details »</a></p>
+      </div>
+      <div class="col-lg-3">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/images/team/louis.jpg"
+          alt="Louis Tomlinson">
+        <h2>Louis Tomlinson</h2>
+        <p>Louis Tomlinson is an English singer and songwriter. He rose to fame as a member of the boy band One
+          Direction. He began his career as an actor, appearing as an extra in ITV drama film If I Had You and the BBC
+          drama Waterloo Road.</p>
+        <p class="mt-4"> <a class="btn btn-primary" href="#" role="button">View details »</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- CAROUSEL CARD END -->
+
+  <!-- CARD START -->
+  <div class="card text-center">
+    <div class="card-header">
+      One Direction Official
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">10 Years of One Direction</h5>
+      <p class="card-text">With lots of love and support, You all people always welcome.</p>
+      <a href="index.html" class="btn btn-primary">Start Singing</a>
+    </div>
+    <div class="card-footer text-muted">
+      <span class="badge badge-primary">10</span> Years of <span class="badge badge-primary">1D</span>
+    </div>
+  </div>
+
+
+  <!-- CARD END  -->
+
+  <!-- FOOTER START -->
+  <footer class="container mt-3">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>@ 2020-2021 CyberWorld, Ind <span class="badge badge-pill badge-danger">Made With Love</span></p>
+  </footer>
+  <!-- FOOTER END -->
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
