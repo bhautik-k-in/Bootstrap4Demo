@@ -21,7 +21,14 @@
     @media (max-width: 770px) {
       #aboudData {
         text-align: center;
+        }
+      #case2 #image2 {
+        order: 2;
       }
+      #case2 #image2Data {
+        order: 1;
+      }
+   }
 
       @media (max-width: 600px) {
         html,body {
@@ -29,10 +36,8 @@
           overflow-x: hidden;
           background-size: contain;
         }
-
-
-      }
-    }
+       }
+    
   </style>
 </head>
 
@@ -238,7 +243,7 @@
 
   <div id="aboudData" class="container my-5">
     <div class="row">
-      <div class="row d-flex justify-content-center align-items-center mb-5">
+      <div id="case1" class="row d-flex justify-content-center align-items-center mb-5">
         <div class="col-md-7">
           <h2 class="heading">1D Music Competition. <span class="text-muted">It’ll blow your mind.</span>
           </h2>
@@ -250,11 +255,11 @@
         </div>
       </div>
 
-      <div class="row d-flex justify-content-center align-items-center mb-5">
-        <div class="col-md-5">
+      <div id="case2" class="row d-flex justify-content-center align-items-center mb-5">
+        <div id="image2" class="col-md-5">
           <img class="img-fluid" src="https://source.unsplash.com/400x400/?song,singing" alt="Singing">
         </div>
-        <div class="col-md-7">
+        <div id="image2Data" class="col-md-7">
           <h2 class="heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
           <p class="lead">Get a chance to win <span class="badge badge-primary">1D</span> challenge and send us your
             recorded karoke on <span class="badge badge-pill badge-success">Steal My Girl</span> Official Music.</p>
@@ -262,7 +267,7 @@
 
       </div>
 
-      <div class="row d-flex justify-content-center align-items-center">
+      <div id="case3" class="row d-flex justify-content-center align-items-center">
         <div class="col-md-7">
           <h2 class="heading">10 Years of One Direction.<span class="text-muted">Thanks for all love.</span>
           </h2>
